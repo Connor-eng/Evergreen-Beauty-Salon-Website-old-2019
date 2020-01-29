@@ -1,0 +1,448 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="Description" content="Evergreen Beauty Salon">
+		<title>Evergreen Beauty Salon</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<link href="https://fonts.googleapis.com/css?family=La Belle Aurore" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(window).on('scroll', function(){
+				if($(window).scrollTop()){
+					$('nav').addClass('black');
+				}
+				else{
+					$('nav').removeClass('black');
+				}
+			})
+			$(document).ready(function(){
+				$(".menu h4").click(function(){
+					$("nav ul").toggleClass("active");
+				})
+			})
+		</script>
+		<script>
+			function print(el){
+				var restorepage = document.body.innerHTML;
+				var content = document.getElementById(el).innerHTML;
+				document.body.innerHTML = content;
+				window.print(el);
+				document.body.innerHTML = restorepage;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="responsive-bar">
+				<div class="menu">
+					<h4>Menu</h4>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<nav>
+				<ul>
+					<li><a href = "#home">Home</a></li>
+					<li><a href = "#skin">Skin</a></li>
+					<li><a href = "#body">Body</a></li>
+					<li><a href = "#other">Other</a></li>
+					<li><a href = "#machines">Machines</a></li>
+					<li><a href = "#coupons">Coupons</a></li>
+					<li><a href = "#find">Find Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<section class = "sec1" id="home"> 
+			<div class="container">
+				<font color="white">
+					<div align="center">
+						
+					</div>
+					<a href="#skin">
+						<font face="Helvetica" color="white">explore our services</font>
+						<center><br><br>
+							<i class="arrow down"></i>
+						</center>
+					</a>
+				</font>				
+			</div>
+		</section>
+		<section class = "sec3" id="skin">
+			<div class="skin-content">
+				<h1>Skin</h1>
+				<div class="s-column1">
+					<h5>Evergreen Classic Facial &nbsp; <font face="Helvetica" color="#727171" size="+1">60 min</font></h5>
+					<p>
+						This basic facial is for people with non-problematic skin and want to reduce blackheads or slight dryness in their skin. Includes a facial steaming massage, light extractions, and a hydrating mask.
+					</p>
+					<h6>$38/one treatment</h6>
+					<h3>$288/ten treatments</h3>
+					<br>
+					<h5>Essential Glow Facial &nbsp; <font face="Helvetica" color="#727171" size="+1">75 min</font></h5>
+					<p>
+						This facial is for skin that is dry or dull. It includes a steaming facial massage, and blackhead extractions. Afterwards, we use the <a href="#ultra">ultrasound machine</a> to help absorption of the hydrating serum. This facial ends with a nutritious mask.
+					</p>
+					<h6>$48/one treatmen</h6>
+					<h3>$388/ten treatments</h3>
+					<br>
+					<h5>Bio Light Treatment &nbsp; <font face="Helvetica" color="#727171" size="+1">80 min</font></h5>
+					<p>
+						This facial is an upgrade of the essential glow facial. After extractions, a serum matching your skin type is used and the <a href="#bio">bio-light machine</a> will be used to treat various types of problem skin using different colors of visible light.
+					</p>
+					<h6>$128/one treatment</h6>
+					<h3>$988/ten treatments</h3>
+					<br>
+					<h5>Radio Frequency Treatment &nbsp; <font face="Helvetica" color="#727171" size="+1">80 min</font> </h5>
+					<p>
+						A must-have for aging skin, this treatment tightens the skin instantaneously with the <a href="#radio">Radio Frequency machine</a>. We target the smile lines, under eyes, forehead, and jawline, making your skin look years younger. 
+					</p>
+					<h6>$148/one treatment</h6>
+					<h3>$1188/ten treatments</h3>
+					<br>
+					<h5>Eye Treatment &nbsp; <font face="Helvetica" color="#727171" size="+1"></font></h5>
+					<p>
+						Our eyes are the first to show our age. This treatment uses the <a href="#radio">RF machine</a> to lift
+						and tighten under and around the eye area, giving immediate results. After, the
+						collagen eye mask is used to reduce dark circles, fine lines, and eyebags.
+					</p>
+					<h6>$48/one treatment</h6>
+					<h3>$388/ten treatments</h3>
+				</div>
+				<div class="s-column2">
+					<h5>Anti- Acne and Purifying Facial &nbsp; <font face="Helvetica" color="#727171" size="+1">75 min</font></h5>
+					<p>
+						Targeted toward acne prone skin, this facial includes deep cleansing of the pores, and full extractions. We also use an aloe serum and a <a href="#high">high frequency machine</a> to disinfect pimples. Ends with a oil control mask.
+					</p>
+					<h6>$48/one treatment</h6>
+					<h3>$388/ten treatments</h3>
+					<br>
+					<h5>Gold Crystal Collagen Facial &nbsp; <font face="Helvetica" color="#727171" size="+1">75 min</font></h5>
+					<p>
+						Collagen is what holds your skin together. This treatment is full of collagen and helps to brighten the skin and reduce fine lines. Good for all skin types. Includes the <a href="#ultra">ultra sound machine</a> to absorb collagen. Ends with a gold crystal collagen mask to help your skin glow.
+					</p>
+					<h6>$68/one treatment</h6>
+					<h3>$488/ten treatments</h3>
+					<br>
+					<h5>Oxygen Hydrating Facial &nbsp; <font face="Helvetica" color="#727171" size="+1">80 min</font></h5>
+					<p>
+						This facial is beneficial for all skin type, from dry and sensitive to oily and acne-
+						prone. Includes deep cleansing, extractions, and the <a href="#o2">O<sub>2</sub> Jet Plus machine</a>.
+						Leaving the skin hydrated and your pores disinfected after the facial. Ends with a
+						hydrating mask. 
+					</p>
+					<h6>$138/one treatment</h6>
+					<h3>$988/ten treatments</h3>
+					<br>
+					<h5>DermaLift Regeneration Treatment &nbsp; <font face="Helvetica" color="#727171" size="+1">80 min</font></h5>
+					<p>
+						The <a href="#derma">DermaLift Regeneration machine</a> is used at the end of this facial to stimulate new skin growth to shrink pore size dramatically and tighten sagging skin. If your skin is rough or dull, this is the facial for you. It will replace your problem skin with radiant new skin.
+					</p>
+					<h6>$198/one treatment</h6>
+					<h3>$888/ten treatments</h3>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<div class="next-position">
+						<a href="#body" class="nextpg">
+							<font face="Helvetica" color="white">Body Treatments</font>
+							<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="arrow down"></i>
+						</a>
+					</div>
+					<br><br>
+				</div>
+			</div>
+		</section>
+		<section class = "sec4" id="body">
+			<div class="body-content">
+				<h1>Body</h1>
+				<div class="b-column1">
+					<h5>Back Facial &nbsp; <font face="Helvetica" color="#727171" size="+1">60 min</font></h5>
+					<p>
+						The back facial starts with deep cleansing, exfoliation, and extractions. After, we use an aloe serum and the high frequency machine to disinfect problem areas and lighten dark marks. Lastly, a seaweed mask will reduce redness on the back.
+					</p>
+					<h6>$68 treatment</h6>
+					<br>
+					<h5>Body Slimming Treatment &nbsp; <font face="Helvetica" color="#727171" size="+1">90 min</font></h5>
+					<p>
+						This treatment has four parts:
+						<br>
+						<br>- Full body heating pad to burn calories and sweat
+						<br>- Hot slimming cream massage to melt stored fat
+						<br>- G5 Vibration machine to stimulate exercise and burn calories
+						<br>- Electrical Muscle Simulation (EMS) machine to tone muscles and burn fat 
+					</p>
+					<h6>$68/one treatment</h6>
+					<h3>$488/ten treatments</h3>
+					<br>
+					<h5>Hot Stone Massage &nbsp; <font face="Helvetica" color="#727171" size="+1">60 min</font></h5>
+					<p>
+						Hot stones are used during the hour-long full body massage to help promote circulation and relieve soreness. This massage relaxes the mind and the body, helping with tension and stiffness.
+					</p>
+					<h6>$68 treatment</h6>
+					<br>
+					<h5>Chinese Traditional Cupping &nbsp; <font face="Helvetica" color="#727171" size="+1"></font> </h5>
+					<p>
+						Cupping has a long history in Chinese culture, people of all ages and sizes seek this treatment to help with stiff muscles. It also releases the body's toxins by bringing bad blood to the surface.
+					</p>
+					<h6>$38 treatment</h6>
+					<br><br>
+				</div>
+				<div class="b-column2">
+					<h5>Special Therapy Massage for Females &nbsp; <font face="Helvetica" color="#727171" size="+1">90 min</font></h5>
+					<p>
+						Since ancient Chinese times, people said that if you feel pain then that part of the body's blood circulation is poor. Only the king's doctor would know a special massage to promote all-over blood circulation, a healthy lymphatic system, and a healthy reproductive system (fertility), by releasing the pressure points of the body. The use of a heating lamp is used also to dissolve blood clots in the body for a better blood circulation throughout. This special message balances hormones in the female body, slows down the aging process, regulates the menstrual cycle, and relieves the pain it comes with.
+					</p>
+					<h6>$68/one treatment</h6>
+					<h3>$488/ten treatments</h3>
+					<br>
+					<h5>Bust Treatment &nbsp; <font face="Helvetica" color="#727171" size="+1">60 min</font></h5>
+					<p>
+						This is a massage for your breasts that promotes milk duct function and circulation. It will reduce clotting for healthier breasts. There is also a warm mask that will help absorption of the breast massage cream.
+					</p>
+					<h6>$68/one treatment</h6>
+					<h3>$488/ten treatments</h3>
+					<br>
+					<h5>Neck Tightening Treatment &nbsp; <font face="Helvetica" color="#727171" size="+1"></font> </h5>
+					<p>
+						The neck is one of the most obvious places that shows age. This treatment includes a relaxing neck massage and the Gold Collagen Neck Mask. This treatment works to tighten and brighten your neck area.
+					</p>
+					<h6>$48/one treatment</h6>
+					<h3>$288/ten treatments</h3>
+					<br>
+					<h5>Hand Nourishment Treatment &nbsp; <font face="Helvetica" color="#727171" size="+1"></font> </h5>
+					<p>
+						Whether it's doing housework or being at work, our hands do a lot during the day and the skin tends to be rough over time. This treatment includes a moisturizing hand massage and 15 minutes in the heating glove.
+					</p>
+					<h6>$48/one treatment</h6>
+					<h3>$288/ten treatments</h3>
+					<br><br><br><br>
+					<div class="next-position">
+						
+						<a href="#other" class="nextpg">
+							<font face="Helvetica" color="white">Other</font>
+							<br><br>
+							&nbsp;&nbsp;&nbsp;<i class="arrow down"></i>
+						</a>
+					</div>
+					<br><br><br>
+				</div>
+			</div>
+		</section>
+		<section class = "sec5" id="other">
+			<div class="other-content">
+				<div class="other-size">
+					<a>
+						<h3>Skin Tag Removal</h3>
+					</a>
+					<p>
+						<ul>
+							<li>Painless</li>
+							<li>Your skin will repair on its own</li>
+							<li>Some skin tags are contagious, if left unattended, they can grow bigger or spread to other parts of your skin</li>
+						</ul>
+						<center>
+						<img src="skin tag.jpg" alt="skintag" width="600">
+						</center>
+					</p>
+					<br><br><br><br>
+					<a>
+						<h3>Eyebrow Tattoo</h3>
+					</a>
+					<p>
+						 Eyebrow tattoos can help correct darkness, thickness, and shape of your brows. The technician will draw a shape you are happy with first with a brow pencil. After the initial consultation, you can get the tattoo done the same day. We also offer numbing cream. Keep in mind that some tattoos last longer than others because everyone has different skin types.
+					</p>
+				</div>
+				<br><br>
+				<div class="next-position">
+					<a href="#machines" class="nextpg">
+						<font face="Helvetica" color="white">Machines</font>
+						<br><br>
+						<i class="arrow down"></i>
+					</a>
+				</div>
+				<br><br><br>
+			</div>
+		</section>
+		<section class = "sec6" id="machines">
+			<div class="machines-content">	
+				<h1>Machines</h1>
+				<div class="m-column1">
+					<h5>Microdermabrasion (Infinity Peel)</h5>
+					<p>
+						This machine acts like a vacuum cleaner and sucks up dead skin, excess oil, and even blackheads, leaving your skin clean and smooth. With unclogged pores, your skin becomes better at absorbing product. It can also extract blackheads that otherwise would have been painful to extract manually. It also reduces fine lines and lightens dark spots.
+					</p>
+					<h6>Advantages of Microdermabrasion:</h6>
+					<p>	
+						<ul>
+							<li>There are nine different types of tip shapes and diamond crystal sizes, which can be used on different parts of the body, according to different skin types.</li> 
+							<li>Reduces wrinkles, blackheads, whiteheads, etc.</li>
+							<li>Evens out scars, fine lines, sun damaged skin</li>
+						</ul>
+					</p>
+					<br><br><br id="o2"><br><br>
+					<h5>Oxygen Jet Peel and Spray</h5>
+					<p>
+						This machine has two separate modes for an overall skin healing process.
+						<h6>Oxygen Jet peel (mode 1):</h6>
+						<ul>
+							<li>Sprays high power saline solution into the pores to wash out excess oil</li> 
+							<li>Reduces pore size and redness</li>
+							<li>Brightens the skin</li>
+						</ul>
+						<h6>Oxygen Spray (mode 2):</h6>
+						<ul>	
+							<li>Used with a serum that matches your skin type</li>
+							<li>Sprays low power oxygen into the pores and pushes serum into the skin</li>
+							<li>Reduces swelling and closes up the pores, speeding up the healing process</li>
+							<li>Reduces fine lines</li>
+						</ul>
+					</p>
+					<h6>Match-making for the Skin:</h6>
+					<p>
+						<ul>
+							<li>Acne and sensitive skin- helps sooth sensitive skin and kill bacteria to stop acne growth.</li>
+							<li>Overly eroded or sun-burned skin- lessens skin redness and hydrates as well as moisturize.</li>
+							<li>Oily scalps- balances the secretions of pores on the scalp.</li>
+							<li>Dull skin- helps old skin rejuvenate, help new skin shine.</li>
+						</ul>
+					</p>
+					<br><br><br><br id="radio"><br><br>
+					<h5>Radio Frequency RF </h5>
+					<p>
+						The RF machine is very popular among women who are developing fine lines. While the client enjoys a warm massage, the machine is actually stimulating the skin using waves to tighten, brighten, and lift the skin. Results are instantaneous.
+					</p>
+					<h6>Effects of deep heat of the RF system</h6>
+					<p>
+						<ul>
+							<li>Increases the amount of blood in the blood stream</li>
+							<li>Increases oxygen flow</li>
+							<li>Helps dismantling of fat</li>
+							<li>Promotes lymph refinement</li>
+							<li>Softens cellulite</li>
+							<li>Promotes metabolism</li>
+						</ul>
+					</p>
+					<br><br><br><br><br><br><h3 id="ultra"></h3><br><br><br><br><br><br>
+					<h5>Ultrasonic Facial Machine </h5>
+					<p>
+						Used with a serum matching your skin type, this machine is commonly used after extractions to help absorption of product. This can help with hydrating the skin. Additionally, it reduces redness from extractions and calms the skin down for the mask.
+					</p>
+					<br><br><br><br><br><br><br><br id="high"><br><br><br><br><br><br><br>
+					<h5>High Frequency Machine</h5>
+					<p class="big">
+						Used frequently on acne-prone skin, this machine works to disinfect problem areas in the skin to prevent pimples from coming back. Paired with the aloe serum, it will help with oil control, reduce swelling, and close up the pores.
+					</p>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br id="bio"><br><br><br><br><br><br><br>
+					<h5>Bio Light Therapy Machine</h5>
+					<p class="big">
+						Unlike ultraviolet rays, which are harmful to the skin, visible light, otherwise known as colored light, can be beneficial. This machine offers 7 different colors of visible light to target different skin types. 
+					</p>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br id="derma"><br><br><br>
+					<h5>Derma Lift Regeneration Machine</h5>
+					<p>
+						The DermaLift System uses the most advanced technology to improve skin renewal and speed up collagen production, leaving skin radiant and smooth. 
+					</p>
+					<h6>Advantages of the DermaLift:</h6>
+					<p>
+						<ul>
+							<li><i>Flawless</i>: DermaLift System Treatment helps to improve skin appearance, renew sin structre, improve skin elasticity, remove excess crease and dirt, and restore smooth skin.</li>
+							<li><i>Painless</i>: DermaLift System uses the most advanced Induction Motor technology, it’s 3840 times per minute vibration is faster than any human nerve reaction, to reduce pain to the very minimal.</li>
+							<li><i>Infection free</i>: DermaLift uses disposable applicator that individually packed to make sure all uses are safe.</li>
+							<li><i>Risk free</i>: it is free from any bleeding or scratches, reduces the repairing & maintaining process after the treatment. Application of makeup the day after the treatment is safe as well.</li> 
+						</ul>
+					</p>
+					<br><br>
+					<div class="next-position">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#coupons" class="nextpg">
+							<font face="Helvetica" color="white">Coupons</font>
+							<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="arrow down"></i>
+						</a>
+					</div>
+					<br><br>
+				</div>
+				<div class="m-column2">
+					<br><br>
+					<img src="microdermabrasion.jpg" width="500" alt="microdermabrasion">
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<img src="oxygen.jpg" width="500" alt="oxygen">
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<img src="radio.jpg" width="500" alt="radio">
+					<br><br><br><br><br><br><br><br><br><br><br><br>
+					<img src="ultra.jpg" width="500" alt="ultra">
+					<br><br><br><br><br><br><br><br><br><br><br><br>
+					<img src="high.jpg" width="500" alt="high">
+					<br><br><br><br><br><br><br><br><br><br><br>
+					<img src="bio.jpg" width="500" alt="bio">
+					<br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<img src="derma.jpg" width="500" alt="derma">
+				</div>
+			</div>
+		</section>
+		<section class = "sec7" id="coupons">
+			<div class="coupons-content" id="promo">
+				<div class="icon">
+					<button onclick="print('promo')"><i class="fa fa-print" style="font-size:24px"></i></button>
+				</div>
+				<h1>promotions</h1>
+				<div class="c-column1">
+					<img src="promo1.jpg" width="450" align="left" alt="promo1">
+				</div> 
+				<div class="c-column2">
+					<a><img src="promo2.jpg" width="450" align="right" alt="promo2"></a>
+				</div>
+				<div class="coupon-friend">
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<h2>Bring a friend or family member for a facial and get a $10 gift card.</h2>
+				</div>
+				<br><br>
+			</div>
+		</section>
+		<section class = "sec8" id="find">
+			<div class="find-content">
+				<h1>find us</h1>
+				<div class="f-column">
+					<div class="mapouter">
+		  				<div class="gmap_canvas">
+			  				<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=90-15%20Corona%20Ave%2C%20Queens%2C%20NY%2011373&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			  				<a href="https://ultimatewp.net">UltimateWP</a>
+		  				</div>
+		  				<style>
+			  				
+		  				</style>
+	  				</div>
+				</div>
+				<div class="f-column1">
+					<h3>Hours</h3>
+					<p>
+						Mon-Fri &nbsp; 9:30am-7:30pm
+						<br>Sat-Sun &nbsp; 9am-7pm
+						<br><br>
+						Closed on the following holidays: 
+						<br>New Years, Fourth of July, Thanksgiving & Christmas 
+					</p>
+					<br>
+					<h3>Number</h3>
+					<p>
+						(718)639-6688
+						<br>Appointments preferred
+					</p>
+					<br>
+					<h3>Getting Here</h3>
+					<p>
+						7 minute walk from R & M trains at Grand Avenue
+						<br>
+						Q58 takes you to the corner of our block
+						<br><br>
+						Street parking available, no private parking
+					</p>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
